@@ -1,17 +1,28 @@
- Olá, eu sou a Sarah! 👋
+# Sistema de Cadastro de Veículos em C 🚗
 
-🎓  Estudante do 2º semestre de **Engenharia da Computação**. Atualmente mergulhada nos conceitos de programação estruturada e algoritmos utilizando a linguagem **C**.
+Este é um programa de console desenvolvido em linguagem C para gerenciamento e persistência de dados de veículos. O sistema permite cadastrar carros, salvá-los em um arquivo de texto externo e realizar buscas por placa.
 
-🎯 Meu foco é me tornar uma **Desenvolvedora Full Stack com forte inclinação para o Back-End** no desenvolvimento web. A longo prazo, meu objetivo é evoluir para a área de **Arquitetura de Dados**.
+Projetado como uma atividade prática para exercitar conceitos de estruturas de dados e manipulação de arquivos.
 
-🛠️ **Tecnologias e Estudos Atuais:**
+## 🚀 Funcionalidades
 
-* **Linguagem C (Programação Estruturada Sólida):**
-  * Controle de Fluxo (for, while, switch-case)
-  * Estruturas de Dados Estáticas (Vetores e Matrizes)
-  * Organização de Código (Funções e Escopo)
-  * Modelação de Dados Avançada (structs)
-  * Gerenciamento de Memória por Ponteiros 🧠
-  * Persistência de Dados (Manipulação de Arquivos `FILE` para leitura e escrita)
+* **Cadastrar Carro:** Registra modelo, placa, ano e preço. Os dados são salvos na memória e gravados no arquivo `cadastro.txt`.
+* **Consultar Carro:** Permite buscar um veículo cadastrado utilizando a placa como chave de busca.
+* **Persistência de Dados:** Gravação automática dos dados inseridos em um arquivo de texto.
 
-* **Ferramentas de Controle:** Git & GitHub
+## 🛠️ Tecnologias Utilizadas
+
+* **Linguagem:** C
+* **Bibliotecas Padrão:** `<stdio.h>`, `<string.h>`, `<locale.h>`
+
+## 📁 Estrutura do Código
+
+O projeto utiliza uma estrutura (`struct`) para definir o tipo de dado `carros`:
+
+```c
+struct carros {
+    char modelo[50];
+    char placa[10];
+    int ano;
+    float preço;
+};
